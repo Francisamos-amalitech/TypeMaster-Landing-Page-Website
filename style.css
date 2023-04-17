@@ -187,7 +187,7 @@ nav .pre-order:hover{
 .new-img .pattern2{
     position:absolute;
     left:0%;
-    top:104%;
+    top:101%;
     z-index:-1;
 }
 /* ----- END OF HEADER SECTION STYLING ------ */
@@ -196,33 +196,43 @@ nav .pre-order:hover{
 
 /* ------- WIRELESS KEYBOARD SECTION-------- */
 .wireless-kdb-container{
-    width:100%;
+    width:95%;
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
     gap:60px;
     padding:2% 8%;
+  
 }
+
 
 
 .img-box{
     position:relative;
+    
 }
 
-/* .img-box{
-     content:'';
-     width:100%;
-     height:100%;
-     position:absolute;
-     top:0;
-     left:0;
-     background:var(--deep-orange);
-     opacity:0.7;
-} */
+.img-box:after{
+    position:absolute;
+    content:'';
+    display:block;
+    width:35%;
+    height:100%;
+    background:var(--deep-orange);
+    top:0;
+    left:0;
+    border-radius:10px;
+    opacity:0.7;
+}
+
+
+
+
 
 .img-box img:nth-child(1){
        width:35%;
        height:auto;
        margin-right:15px;
+       border-radius:10px;
 }
 
 .img-box img:nth-child(2){
@@ -258,16 +268,13 @@ nav .pre-order:hover{
 
 
 
-
-
-
-
-
 /* ------ITEMS SECTION STYLING---------------- */
 
 section{
     padding:50px 0;
 }
+
+
 
 .items-container{
     display:grid;
@@ -275,6 +282,7 @@ section{
     padding:2% 8%;
     gap:30px;
 }
+
 
 
 .items-info h3{
@@ -298,8 +306,6 @@ section{
 
 
 
-
-
 /* -------------FOOTER SECTION STYLING------------ */
 
 footer{
@@ -315,9 +321,6 @@ footer p{
 }
 
 /* -------------END OF FOOTER SECTION STYLING------------ */
-
-
-
 
 
 /* --------------RESPONSIVENESS -------------------- */
@@ -353,7 +356,6 @@ footer p{
     }
     
 
-  
     .welcome-info h1{
         font-size:40px;
         line-height:40px;
@@ -361,7 +363,6 @@ footer p{
      
     }
 
-   
 
     .welcome-btn{
         display:flex;
@@ -378,9 +379,6 @@ footer p{
         font-size:12px;
     }
     
-
-  
-
 
  .img-box{
     width:100%; 
@@ -399,13 +397,14 @@ footer p{
 
  
 .img-box img:nth-child(1){
-    width:29%;
+    width:35%;
+    height:100%;
 
    
 }
 
 .img-box img:nth-child(2){
-    width:50%;
+    width:55%;
     height:50%;
     border-radius:20px;
 }
@@ -419,6 +418,16 @@ footer p{
 }
 
 
-    
-    }
+
+.img-box:after{
+    content:'';
+    display:block;
+    width:37%;
+    height:100%;
+   
+}
+
+
+
+}
   
