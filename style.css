@@ -345,7 +345,8 @@ footer p{
 
 @media screen and (max-width:600px){
     .container{
-        width:100%;
+        width:95%;
+        margin:20px;
     }
 
     .feature-info{
@@ -362,5 +363,44 @@ footer p{
         display:none;
     }
 
+
+    nav .pre-order{
+        margin-left:20px;
+        font-size:14px;
+    }
+    
+
+  
+    .welcome-info h1{
+        font-size:40px;
+        line-height:40px;
+        margin-top:40px;
+     
+    }
+
+    .welcome-info p{
+        font-size:12px;
+        line-height:20px;
+    }
+
+    .welcome-btn{
+        display:flex;
+        align-items:center;
+        display: inline;
+        justify-content:center;
+    }
+
+  .welcome-section{
+    width:100%;
+  }
+
+    .welcome-btn .pre-order{
+        font-size:12px;
+    }
+    
+
+    .welcome-info .release{
+        font-size:13px;
+    }
   
 }
