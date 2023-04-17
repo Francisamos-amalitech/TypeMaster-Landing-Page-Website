@@ -162,7 +162,6 @@ nav .pre-order:hover{
 
 
 
-
 .welcome-info img{
     max-width:100%;
     border-radius:25px;
@@ -188,12 +187,74 @@ nav .pre-order:hover{
 .new-img .pattern2{
     position:absolute;
     left:0%;
-    top:117%;
+    top:104%;
     z-index:-1;
 }
 /* ----- END OF HEADER SECTION STYLING ------ */
 
 
+
+/* ------- WIRELESS KEYBOARD SECTION-------- */
+.wireless-kdb-container{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:60px;
+    padding:2% 8%;
+}
+
+
+.img-box{
+    position:relative;
+}
+
+/* .img-box{
+     content:'';
+     width:100%;
+     height:100%;
+     position:absolute;
+     top:0;
+     left:0;
+     background:var(--deep-orange);
+     opacity:0.7;
+} */
+
+.img-box img:nth-child(1){
+       width:35%;
+       height:auto;
+       margin-right:15px;
+}
+
+.img-box img:nth-child(2){
+       width:61%;
+       height:auto;
+       border-radius:20px;
+}
+
+
+.wireless-info h2{
+    font-size:35px;
+    font-weight: 900;
+}
+
+
+.wireless-info p{
+    width:50%;
+    line-height:28px;
+    font-size:18px;
+    margin-top:30px;
+    color:var(--light-blue);
+}
+
+
+.wireless-text{
+    width:85%;
+    float:right;
+    margin:50px  200px auto;
+}
+
+
+/* ------- END OF WIRELESS KEYBOARD SECTION-------- */
 
 
 
@@ -317,9 +378,30 @@ footer p{
     }
     
 
-    .welcome-info .release{
-        font-size:13px;
-    }
+  
+
+
+ .img-box{
+    display:flex;
+    display:inline-block;
+    
+ }
+
+
+
+ 
+.img-box img:nth-child(1){
+    width:20%;
+    height:auto;
+   
+}
+
+.img-box img:nth-child(2){
+    width:30%;
+    height:auto;
+    border-radius:20px;
+}
+
 
     
     }
