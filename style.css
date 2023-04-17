@@ -15,6 +15,9 @@
 }
 
 
+
+
+
 /* ----------------- VARIABLES---------------- */
 
 :root{
@@ -24,6 +27,10 @@
     --light-blue:#7b8bad;
     --lighter-blue:#e8eff2;
     --white-color:#ffffff;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 
@@ -60,6 +67,46 @@ nav .pre-order:hover{
     background:var(--deep-blue);
     color:var(--white-color);
 }
+
+
+
+.top{
+    width:50px;
+    height:50px;
+    background:var(--deep-orange);
+    position:fixed;
+    border-radius:50%;
+    z-index:1;
+    bottom:5%;
+    right:5%;
+    cursor: pointer;
+    animation:move 3s linear infinite;
+}
+
+@keyframes move {
+
+    0%{
+        transform:translateY(-10px);
+    }
+
+
+    50%{
+        transform:translateY(10px);
+    }
+
+     100%{
+        transform:translateY(-10px);
+     }
+}
+
+.top i{
+    color:var(--white-color);
+    font-size:20px;
+    padding:12px;
+    margin:auto 5px;
+    line-height:25px;
+}
+
 
 .welcome-section{
      margin-top:2%;
@@ -164,7 +211,30 @@ nav .pre-order:hover{
 .img-content{
     display:flex;
     gap:30px;
+    position:relative;
 }
+
+
+
+.img-1::after{
+    content:'';
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:var(--deep-orange);
+    top:0;
+    left:0;
+    opacity:0.7;
+    border-radius:20px;
+  
+}
+
+
+
+
+
+
 
 
 .feature-container{
@@ -191,15 +261,6 @@ nav .pre-order:hover{
     width:400px;
     height:550px;
     position:relative;
-}
-
-
-.img-content .img-1:after{
-     content:"";
-     width:100%;
-     height:100%;
-     display:block;
-     background:var(--deep-orange);
 }
 
 
@@ -278,7 +339,7 @@ footer{
 
 footer p{
     color:var(--light-blue);
-    font-size:18px;
+    font-size:16px;
 }
 
 /* -------------END OF FOOTER SECTION STYLING------------ */
