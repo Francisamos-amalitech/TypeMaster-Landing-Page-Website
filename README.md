@@ -1,4 +1,6 @@
-# TypeMaster-Landing-Page-WebsiteIntroduction
+# TypeMaster-Landing-Page-Website
+
+Introduction
 This is the README file for the TypeMaster Landing Page, an HTML document that serves as the front-end for the TypeMaster keyboard website. As a web developer, it is important to have a clear understanding of the HTML document in order to make updates or modifications to the website.
 
 Getting Started
