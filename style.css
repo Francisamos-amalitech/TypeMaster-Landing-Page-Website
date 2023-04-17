@@ -134,6 +134,15 @@ nav .pre-order:hover{
     position:absolute;
     top:17%;
     right:0%;
+    z-index:-1;
+}
+
+
+.new-img .pattern2{
+    position:absolute;
+    left:0%;
+    top:117%;
+    z-index:-1;
 }
 
 .keyboard-feature{
@@ -159,6 +168,7 @@ nav .pre-order:hover{
 
 
 .feature-container{
+   width:100%;
    display:flex;
    flex-wrap:wrap;
    align-items:center;
@@ -176,9 +186,20 @@ nav .pre-order:hover{
 }
 
 
+
 .img-content img{
     width:400px;
     height:550px;
+    position:relative;
+}
+
+
+.img-content .img-1:after{
+     content:"";
+     width:100%;
+     height:100%;
+     display:block;
+     background:var(--deep-orange);
 }
 
 
@@ -187,8 +208,6 @@ nav .pre-order:hover{
    
 
 }
-
-
 
 .feature-info-2 h2{
     font-size:36px;
@@ -204,9 +223,65 @@ nav .pre-order:hover{
 
 }
 
-
-
 /* ----- END OF HEADER SECTION STYLING ------ */
+
+
+
+
+
+
+/* ------ITEMS SECTION STYLING---------------- */
+
+section{
+    padding:50px 0;
+}
+
+.items-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    padding:2% 8%;
+    gap:30px;
+}
+
+
+.items-info h3{
+    font-size:24px;
+    font-weight:800;
+    margin-bottom:30px;
+}
+
+
+.items-info p{
+    line-height:28px;
+    font-size:16px;
+    color:var(--light-blue);
+}
+
+.items-info img{
+    margin-bottom:30px;
+}
+
+/* ------END OF ITEMS SECTION STYLING---------------- */
+
+
+
+
+
+/* -------------FOOTER SECTION STYLING------------ */
+
+footer{
+    padding:50px 0;
+    text-align:center;
+    
+}
+
+
+footer p{
+    color:var(--light-blue);
+    font-size:18px;
+}
+
+/* -------------END OF FOOTER SECTION STYLING------------ */
 
 
 
@@ -226,12 +301,12 @@ nav .pre-order:hover{
 
     .feature-info-2{
         width:100%;
-        flex-direction:column;
-        float:left
+      
     }
 
     .new-img .pattern{
         display:none;
     }
-    
+
+  
 }
