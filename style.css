@@ -1,3 +1,10 @@
+/* 
+--- Designed By : FRANCIS MARK AMOS
+--- FRONTEND DEVELOPER
+-- A TRAINEE @ AMALITECH
+-- DATE:17TH APRIL, 2023 
+*/
+
 /* ----------CSS RESET---------- */
 
 *{
@@ -16,4 +23,17 @@
     --deep-blue:#162542;
     --light-blue:#7b8bad;
     --lighter-blue:#e8eff2;
+}
+
+
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:2% 8%;
+}
+
+
+.logo{
+    
 }
