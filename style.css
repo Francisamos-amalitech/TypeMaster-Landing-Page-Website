@@ -343,6 +343,10 @@ footer p{
  }
 
 
+ .welcome-info  .release{
+    font-size:12px;
+ }
+
     nav .pre-order{
         margin-left:20px;
         font-size:14px;
@@ -357,10 +361,7 @@ footer p{
      
     }
 
-    .welcome-info p{
-        font-size:12px;
-        line-height:20px;
-    }
+   
 
     .welcome-btn{
         display:flex;
@@ -382,24 +383,39 @@ footer p{
 
 
  .img-box{
-    display:flex;
-    display:inline-block;
-    
+    width:100%; 
+ }
+
+ .wireless-info{
+    width:100%;
+    margin:auto;
+    text-align:center;
  }
 
 
+ .welcome-info p{
+    max-width:85%;
+ }
 
  
 .img-box img:nth-child(1){
-    width:20%;
-    height:auto;
+    width:29%;
+
    
 }
 
 .img-box img:nth-child(2){
-    width:30%;
-    height:auto;
+    width:50%;
+    height:50%;
     border-radius:20px;
+}
+
+
+.wireless-text p{
+    width:200px;
+     font-size:12px;
+     margin:20px auto;
+       
 }
 
 
