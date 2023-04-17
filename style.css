@@ -11,7 +11,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-size: 'barlow', sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 
@@ -23,8 +23,16 @@
     --deep-blue:#162542;
     --light-blue:#7b8bad;
     --lighter-blue:#e8eff2;
+    --white-color:#ffffff;
 }
 
+
+/* ----- HEADER SECTION STYLING ------ */
+
+.container{
+    width:85%;
+    margin:auto;
+}
 
 nav{
     display:flex;
@@ -33,7 +41,104 @@ nav{
     padding:2% 8%;
 }
 
-
-.logo{
-    
+nav .pre-order{
+    padding:17px 30px;
+    background:var(--lighter-blue);
+    color:var(--blue-color);
+    font-weight:800;
+    font-size:17px;
+    text-decoration:none;
+    text-transform:uppercase;
+    border-radius:6px;
+    transition:background .3s;
+    cursor:pointer;
 }
+
+nav .pre-order:hover{
+    background:var(--deep-blue);
+    color:var(--white-color);
+}
+
+.welcome-section{
+     margin-top:2%;
+     padding:0 8%;
+}
+
+
+.welcome-info h1{
+    font-size:56px;
+    font-weight:900;
+    line-height:56px;
+    margin-bottom:30px;
+}
+
+
+.welcome-container{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    align-items:center;
+    gap:30px;
+}
+
+
+
+.welcome-info .pre-order{
+    padding:17px 30px;
+    background:var(--deep-orange);
+    color:var(--white-color);
+    font-weight:900;
+    font-size:17px;
+    text-decoration:none;
+    text-transform:uppercase;
+    border-radius:6px;
+    margin-right:35px;
+    transition:background .3s;
+    cursor:pointer;
+    display:inline-block;
+    margin-top:50px;
+}
+
+
+.welcome-info .pre-order:hover{
+    background:var(--light-orange);
+}
+
+.welcome-info  .release{
+    text-decoration:none;
+    color:var(--light-blue);
+    font-size:20px;
+    font-weight:700;
+}
+
+
+
+
+.welcome-info img{
+    max-width:100%;
+    border-radius:25px;
+}
+
+
+.welcome-info p{
+    font-size:16px;
+    line-height:26px;
+    font-weight:700;
+    color:var(--light-blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----- END OF HEADER SECTION STYLING ------ */
