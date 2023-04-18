@@ -388,6 +388,7 @@ footer p{
  .wireless-info{
     width:100%;
     margin:0 auto;
+    text-align:center;
    
  }
 
@@ -416,7 +417,7 @@ footer p{
 
 
 .wireless-text p{
-    width:200px;
+      width:200px;
      font-size:12px;
      margin:20px auto;
        
