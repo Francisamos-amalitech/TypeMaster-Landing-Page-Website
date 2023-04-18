@@ -328,7 +328,7 @@ footer p{
 
 @media screen and (max-width:600px){
     .container{
-        width:100%;
+        width:95%;
         margin:20px;
     }
 
@@ -387,13 +387,17 @@ footer p{
 
  .wireless-info{
     width:100%;
-    margin:auto;
-    text-align:center;
+    margin:0 auto;
+   
  }
 
 
  .welcome-info p{
-    max-width:85%;
+    width:290px;
+    font-size:12px;
+  
+   
+
  }
 
  
