@@ -29,16 +29,20 @@
     --white-color:#ffffff;
 }
 
+
+
 html{
     scroll-behavior: smooth;
 }
+
+
 
 
 /* ----- HEADER SECTION STYLING ------ */
 
 .container{
     width:85%;
-    margin:auto;
+    padding:10px;
 }
 
 
@@ -70,7 +74,7 @@ nav .pre-order:hover{
 
 
 
-.top{
+/* .top{
     width:50px;
     height:50px;
     background:var(--deep-orange);
@@ -105,7 +109,7 @@ nav .pre-order:hover{
     padding:12px;
     margin:auto 5px;
     line-height:25px;
-}
+} */
 
 
 .welcome-section{
@@ -178,14 +182,14 @@ nav .pre-order:hover{
 .new-img .pattern{
     position:absolute;
     top:17%;
-    right:-4%;
+    right:-5%;
     z-index:-1;
 }
 
 
 .new-img .pattern2{
     position:absolute;
-    left:0%;
+    left:-5%;
     top:95%;
     z-index:-1;
 }
@@ -195,11 +199,10 @@ nav .pre-order:hover{
 
 /* ------- WIRELESS KEYBOARD SECTION-------- */
 .wireless-kdb-container{
-    width:95%;
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
     gap:60px;
-    padding:2% 8%;
+    padding:0 8%;
     align-items:center;
   
 }
@@ -217,11 +220,12 @@ nav .pre-order:hover{
     display:block;
     width:35%;
     height:100%;
-    background:var(--deep-orange);
+    background:#da5304;
+    background-blend-mode:overlay;
     top:0;
     left:0;
     border-radius:10px;
-    opacity:0.7;
+    opacity:0.9;
 }
 
 
@@ -258,7 +262,7 @@ nav .pre-order:hover{
 
 
 .wireless-text{
-    width:85%;
+    width:53%;
     margin:auto;
 }
 
@@ -270,7 +274,7 @@ nav .pre-order:hover{
 /* ------ITEMS SECTION STYLING---------------- */
 
 section{
-    padding:50px 0;
+    padding:100px 0;
 }
 
 
@@ -278,7 +282,7 @@ section{
 .items-container{
     width:100%;
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(130px, 1fr));
     padding:2% 8%;
     gap:80px;
 }
@@ -299,7 +303,7 @@ section{
 }
 
 .items-info img{
-    width:45px;
+
     margin-bottom:30px;
 }
 
@@ -321,6 +325,11 @@ footer p{
     font-size:16px;
 }
 
+
+footer small{
+    font-weight:800;
+}
+
 /* -------------END OF FOOTER SECTION STYLING------------ */
 
 
@@ -329,7 +338,7 @@ footer p{
 @media screen and (max-width:600px){
     .container{
         width:95%;
-        margin:20px;
+        padding:20px;
     }
 
     .feature-info{
@@ -347,9 +356,13 @@ footer p{
  }
 
 
+
  .welcome-info  .release{
     font-size:12px;
  }
+
+
+ 
 
     nav .pre-order{
         margin-left:20px;
@@ -365,19 +378,26 @@ footer p{
     }
 
 
+    .welcome-info p{
+      
+        margin-right:30px;
+        padding:10px;
+    }  
+
     .welcome-btn{
         display:flex;
         align-items:center;
-        display: inline;
+        display: inline-block;
         justify-content:center;
     }
 
   .welcome-section{
     width:100%;
+    padding:5px;
   }
 
     .welcome-btn .pre-order{
-        font-size:12px;
+        font-size:10px;
     }
     
 
@@ -388,18 +408,13 @@ footer p{
  .wireless-info{
     width:100%;
     margin:0 auto;
-    text-align:center;
+   
    
  }
 
 
- .welcome-info p{
-    width:290px;
-    font-size:12px;
-  
-   
 
- }
+
 
  
 .img-box img:nth-child(1){
@@ -417,7 +432,7 @@ footer p{
 
 
 .wireless-text p{
-      width:200px;
+     width:8px;
      font-size:12px;
      margin:20px auto;
        
@@ -433,14 +448,13 @@ footer p{
    
 }
 
-
-.items-info h3{
+.items-info{
+    width:100%;
     text-align:center;
+    font-size:14px;
 }
 
-.items-info p{
-    text-align:center;
-}
+
 
 
 }
