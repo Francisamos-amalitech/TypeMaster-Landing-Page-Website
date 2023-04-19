@@ -342,10 +342,10 @@ footer small{
 
 /* --------------RESPONSIVENESS -------------------- */
 
-@media screen and (max-width:600px){
+@media screen and (max-width:900px){
     .container{
         width:95%;
-        padding:20px;
+        padding:25px;
     }
 
     .feature-info{
@@ -378,8 +378,8 @@ footer small{
     
 
     .welcome-info h1{
-        font-size:40px;
-        line-height:40px;
+        font-size:50px;
+        line-height:50px;
         margin-top:40px;
      
     }
@@ -465,10 +465,12 @@ footer small{
 
 .wireless-row  .overlay:after{
     content:'';
-    width:46%;
+    width:58%;
     height:100%;
-    margin-left:-70px;
+    margin-left:-100px;
 }
 
 }
   
+
+
