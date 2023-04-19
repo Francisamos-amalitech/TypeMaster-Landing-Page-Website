@@ -199,7 +199,7 @@ nav .pre-order:hover{
 .new-img .pattern2{
     position:absolute;
     left:-5%;
-    top:95%;
+    top:98%;
     z-index:-1;
 }
 /* ----- END OF HEADER SECTION STYLING ------ */
@@ -229,22 +229,22 @@ nav .pre-order:hover{
 }
 
 .wireless-row .image{
-    width:59%;
-    
+    width:57%;
 }
 
 
-
-
-.wireless-row .image:after{
+.wireless-row  .overlay:after{
     content:'';
     position:absolute;
-    width:100%;
-    height:100%;
     top:0;
     left:0;
-    display: block;
-    background:var(--deep-orange);
+    width:57%;
+    height:100%;
+    display:block;
+    background-color:#bb4704;
+    background-blend-mode:multiply;
+    opacity:0.7;
+    border-radius:20px;
 }
 
 
@@ -459,6 +459,15 @@ footer small{
     left:-150%;
     top:70%;
       
+}
+
+
+
+.wireless-row  .overlay:after{
+    content:'';
+    width:46%;
+    height:100%;
+    margin-left:-70px;
 }
 
 }
