@@ -88,23 +88,17 @@ nav .pre-order:hover{
     cursor: pointer;
     animation:move 3s linear infinite;
 }
-
 @keyframes move {
-
     0%{
         transform:translateY(-10px);
     }
-
-
     50%{
         transform:translateY(10px);
     }
-
      100%{
         transform:translateY(-10px);
      }
 }
-
 .top i{
     color:var(--white-color);
     font-size:20px;
@@ -342,7 +336,7 @@ footer small{
 
 /* --------------RESPONSIVENESS -------------------- */
 
-@media screen and (max-width:900px){
+@media screen and (max-width:600px){
     .container{
         width:95%;
         padding:25px;
@@ -472,5 +466,3 @@ footer small{
 
 }
   
-
-
