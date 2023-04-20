@@ -14,10 +14,6 @@
     font-family: 'Barlow', sans-serif;
 }
 
-
-
-
-
 /* ----------------- VARIABLES---------------- */
 
 :root{
@@ -40,21 +36,20 @@ body{
 }
 
 
+
 /* ----- HEADER SECTION STYLING ------ */
-
-.container{
-    width:85%;
-    margin:auto;
-}
-
 
 
 nav{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:2% 8%;
+    padding:2% 13%;
 }
+
+
+
+
 
 nav .pre-order{
     padding:17px 30px;
@@ -108,11 +103,6 @@ nav .pre-order:hover{
 } */
 
 
-.welcome-section{
-     margin-top:2%;
-     padding:0 8%;
-     position: relative;
-}
 
 
 .welcome-info{
@@ -134,6 +124,7 @@ nav .pre-order:hover{
     grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
     align-items:center;
     gap:30px;
+    padding:2% 13%;
 }
 
 
@@ -184,16 +175,16 @@ nav .pre-order:hover{
 
 .new-img .pattern{
     position:absolute;
-    top:17%;
-    right:-5%;
+    top:20%;
+    right:-6%;
     z-index:-1;
 }
 
 
 .new-img .pattern2{
     position:absolute;
-    left:-5%;
-    top:98%;
+    left:-6%;
+    top:111%;
     z-index:-1;
 }
 /* ----- END OF HEADER SECTION STYLING ------ */
@@ -205,7 +196,7 @@ nav .pre-order:hover{
     width:65%;
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-    padding:2% 8%;
+    padding:2% 13%;
 }
 
 
@@ -275,7 +266,7 @@ nav .pre-order:hover{
 /* ------ITEMS SECTION STYLING---------------- */
 
 section{
-    padding:100px 0;
+    padding:50px 0;
 }
 
 
@@ -284,7 +275,7 @@ section{
     width:100%;
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(130px, 1fr));
-    padding:2% 8%;
+    padding:2% 13%;
     gap:80px;
 }
 
@@ -337,29 +328,17 @@ footer small{
 /* --------------RESPONSIVENESS -------------------- */
 
 @media screen and (max-width:600px){
-    .container{
-        width:95%;
-        padding:25px;
-    }
 
-    .feature-info{
-        width:100%;
-        
-    }
 
-    .feature-info-2{
-        width:100%;
-      
-    }
+  
 
  .new-img .pattern, .pattern2{
     display:none;
  }
 
 
-
  .welcome-info  .release{
-    font-size:13px;
+    font-size:12px;
  }
 
 
@@ -372,7 +351,7 @@ footer small{
     
 
     .welcome-info h1{
-        font-size:50px;
+        font-size:46px;
         line-height:50px;
         margin-top:40px;
      
@@ -389,6 +368,9 @@ footer small{
 
 .welcome-info p{
     font-size:12px;
+    width:330px;
+
+   
 }
 
 
@@ -399,6 +381,8 @@ footer small{
         display: inline-block;
         justify-content:center;
     }
+
+
 
   .welcome-section{
     width:100%;
@@ -414,12 +398,11 @@ footer small{
 
 
 .items{
-    margin-top:65%;
+    margin-top:90%;
 }
 
 .items-info{
     width:100%;
-    text-align:center;
     font-size:14px;
 }
 
@@ -466,3 +449,68 @@ footer small{
 
 }
   
+
+
+
+@media screen and (max-width:768px){
+     
+
+    .welcome-section{
+        padding:0;
+    }
+
+
+    .welcome-container{
+        gap:50px;
+        
+    }
+
+    .welcome-info{
+        margin:10px;
+    }
+
+    .welcome-info h1{
+        font-size:30px;
+        line-height:40px;
+    }
+
+
+
+    .welcome-info p{
+        width:400px;
+        font-size:12px;
+    }
+
+    .new-img .pattern, .pattern2{
+        display:none;
+    }
+
+    .welcome-btn{
+        width:290px;
+        display:flex;
+        align-items:center;
+    }
+
+    .welcome-btn .pre-order{
+         font-size:11px;
+    }
+
+    .welcome-btn .release{
+        font-size:10px;
+        margin-top:40px;
+    }
+    
+
+    .wireless-text{
+        top:30px;
+        display:flex;
+        align-items:center;
+        left:0;
+
+    }
+
+    .items{
+        margin-top:40px;
+    }
+
+}  
